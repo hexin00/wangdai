@@ -1,1 +1,5 @@
-<button open-type="contact"  session-from="{{id}}" >进入客服会话</button>
+
+<view class='bg'>
+<image class='img' src='http://qiniu.nxhello.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20181225201438.png'></image>
+<button open-type="contact"  session-from="{{id}}" style="background:#0099FF;color:#ffffff" class="bu">立即申请</button>
+</view>

@@ -1,21 +1,65 @@
+.content{
+  background: rgb(228, 226, 226);
+  overflow: auto;
+}
+/*块*/
 .g_block{
   padding: 10px;
-  border: 1px solid black;
   margin: 5px 0;
-  overflow: auto
+  overflow: auto;
+  background: #ffffff;
+  border-bottom: 1px solid #C0C0C0;
 }
+/*图片*/
 .l_img{
-  width: 50px; 
-  height: 50px;
+  height: 40px;
+  width: 40px;
   background-color: #eeeeee;
   float: left;
 }
+/*点击查看*/
 .on_click{
   border: 1px solid red;
   float: right;
-  padding: 3px 7px;
-  border-radius: 5px;
+  line-height: 20px;
+  border-radius: 10px;
   background: red;
   color: white;
-  font-size: 16px;
+  font-size: 13px;
+  height: 20px;
+  padding: 0 15px;
+  margin-top: 4px;
+  font-family:'宋体';
+}
+/*第一行*/
+.f_line{
+  overflow: auto;
+  height: 40px;
+}
+/*app名称*/
+.a_name{
+  line-height: 40px;
+  
+  float: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+/*额度*/
+.edu{
+  color: red;
+  
+}
+/*最高申请额度*/
+.f_text{
+  font-size: 13px;
+  color: 	#C0C0C0;
+  float: left;
+}
+/*日利率*/
+.lilv{
+  float:right;
+  font-size: 14px;
+}
+.ren{
+  font-size: 10px;
 }

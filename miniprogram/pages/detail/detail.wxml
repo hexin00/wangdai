@@ -1,13 +1,48 @@
-{{name}}
-{{edu2}}
-{{lilv2}}
-{{pic}}
-{{qixian}}
-{{ren}}
-{{rz}}
-{{tiaojian}}
+<view class="content">
+<view >
+   <view class='g_block' > 
+      <view class='f_line'>
+        <image class="l_img" src="{{pic}}"></image>
+        <view class="a_name">{{name}}</view>
+        <view class="on_click" id="{{id}}" bindtap="tapName">点击内部注册</view>
+      </view>
+      <view class="edu">{{edu2}}</view>
+      <view class="f_text">最高申请额度(元)：</view>
+      <view class="lilv">参考日利率：{{lilv2}}</view>
+      <view style='clear:both;'></view>
+      <view class="ren">申请人数：{{ren}}</view>
+  </view>
+</view>
+</view>
+<view class="rz">
+  <view>
+  申请条件：
+  </view>
+  <view class="tiaojian">
+  {{tiaojian}}
+  </view>
+  <view>
+  认证资料：
+  </view>
+  <view class="tiaojian">
+  {{rz}}
+  </view>
+</view>
 
-<view id="{{id}}" data-hi="WeChat" bindtap="tapName">点击申请</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

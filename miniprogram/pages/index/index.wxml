@@ -1,11 +1,22 @@
+<view class="content">
 
 <view wx:for="{{array}}" wx:for-index="idx" wx:for-item="itemName" wx:key="_id" >
    <view class='g_block' > 
-      <image class="l_img" src="{{itemName.pic}}"></image>
-      <view class="on_click" id="{{itemName.id}}" bindtap="tapName">点击申请</view>
-      <view>{{itemName.name}}{{itemName.ren}}{{itemName.lilv}}{{itemName.edu}}
+      <view class='f_line'>
+        <image class="l_img" src="{{itemName.pic}}"></image>
+        <view class="a_name">{{itemName.name}}</view>
+        <view class="on_click" id="{{itemName.id}}" bindtap="tapName">点击查看</view>
+      </view>
+      
+      
+      <view class="edu">{{itemName.edu}}</view>
+      <view class="f_text">最高申请额度(元)：</view>
+      <view class="lilv">参考日利率：{{itemName.lilv}}</view>
+      <view style='clear:both;'></view>
+      <view class="ren">申请人数：{{itemName.ren}}</view>
+      
+      
         
-        </view>
 
         
   
@@ -19,3 +30,5 @@
 
 
 
+
+</view>
