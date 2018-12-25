@@ -3,14 +3,34 @@ const app = getApp()
 
 Page({
   data: {
-    avatarUrl: './user-unlogin.png',
-    userInfo: {},
-    logged: false,
-    takeSession: false,
-    requestResult: ''
+    array: [{}]
+  },
+  //
+  tapName(event) {
+    
+    wx.navigateTo({
+      url: '../detail/detail?id=' + event.target.id
+    })
   },
 
   onLoad: function() {
+    var that = this;
+    //console.log(this)
+    wx.request({
+      url: 'https://weixin.nxhello.com/data', // 仅为示例，并非真实的接口地址
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success(res) {
+        that.setData({
+          array:res.data
+        })
+      }
+    })
+
+    
+    
+
     if (!wx.cloud) {
       wx.redirectTo({
         url: '../chooseLib/chooseLib',
@@ -35,6 +55,7 @@ Page({
       }
     })
   },
+  
 
   onGetUserInfo: function(e) {
     if (!this.logged && e.detail.userInfo) {

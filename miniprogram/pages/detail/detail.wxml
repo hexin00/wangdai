@@ -1,0 +1,17 @@
+{{name}}
+{{edu2}}
+{{lilv2}}
+{{pic}}
+{{qixian}}
+{{ren}}
+{{rz}}
+{{tiaojian}}
+
+<view id="{{id}}" data-hi="WeChat" bindtap="tapName">点击申请</view>
+
+
+
+
+
+
+

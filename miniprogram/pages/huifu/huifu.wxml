@@ -1,0 +1,1 @@
+<button open-type="contact"  session-from="{{id}}" >进入客服会话</button>
